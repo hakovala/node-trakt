@@ -1,12 +1,22 @@
 {
   "name": "trakt",
   "version": "0.0.0",
+  "author": "Harri Kovalainen <hakovala@gmail.com>",
   "description": "Helper module for interacting with Trakt API",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "echo Not yet implemented",
+    "test": "echo Not yet implemented"
   },
-  "repository": "",
-  "author": "Harri Kovalainen",
-  "license": "BSD"
+  "dependencies": {
+    "websocket": ">= 1.0.x"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">= 0.8"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "ssh://qekosoft.com/srv/git/node-trakt.git"
+  }
 }
