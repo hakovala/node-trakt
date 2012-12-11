@@ -9,14 +9,15 @@
     "test": "echo Not yet implemented"
   },
   "dependencies": {
-    "websocket": ">= 1.0.x"
+    "optimist": ">= 0.3.x"
   },
   "devDependencies": {},
   "engines": {
     "node": ">= 0.8"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "ssh://qekosoft.com/srv/git/node-trakt.git"
-  }
+  "repository": {
+    "type": "git",
+    "url": "ssh://qekosoft.com/srv/git/node-trakt.git"
+  },
+  "bin" : { "trakt" : "./bin/cli.js" }
 }
