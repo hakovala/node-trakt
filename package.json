@@ -6,12 +6,14 @@
   "main": "./lib/index.js",
   "scripts": {
     "start": "echo Not yet implemented",
-    "test": "echo Not yet implemented"
+    "test": "nodeunit ./tests"
   },
   "dependencies": {
     "optimist": ">= 0.3.x"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodeunit" : ">= 0.7.x"
+  },
   "engines": {
     "node": ">= 0.8"
   },
