@@ -9,7 +9,7 @@ var argv = require('optimist')
 	.demand(['a','m'])
 	.argv;
 
-var trakt = new Trakt({user: argv.user, password: argv.pass}); 
+var trakt = new Trakt({username: argv.user, password: argv.pass}); 
 
 trakt.on('error', function(err) {
 	console.log("Trakt error: " + err.message)
