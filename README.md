@@ -1,4 +1,4 @@
-node-trakt
+node-trakt [![Build Status](https://travis-ci.org/hakovala/node-trakt.png?branch=master)](https://travis-ci.org/hakovala/node-trakt)
 =====
 
 NodeJS wrapper module for Trakt.tv API.
