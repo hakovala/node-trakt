@@ -61,6 +61,17 @@ describe('Trakt requests', function() {
 				res.should.includeEql({title: "hello"})
 			})
 		})
+		it('should discard extra optional arguments', function() {
+			var get = nock(url)
+				.get('/activity/shows.json/' + config.api_key + '/title')
+				.reply(200, {status: 'success'})
+			trakt.request('activity', 'shows', {title: 'title', start_ts: '12345678'}, function(err, res) {
+				should.not.exist(err)
+				should.exist(res)
+				res.should.have.property('status')
+				res.status.should.equal('success')
+			})
+		})
 	})
 	describe('Post request', function() {
 		it('should give error, no auth', function() {
@@ -94,6 +105,29 @@ describe('Trakt requests', function() {
 				res.should.have.property('message')
 				res.status.should.equal('success')
 				res.message.should.equal('all good!')
+			})
+		})
+		it('should discard extra arguments', function() {
+			var post = nock(url)
+				.post('/show/library/' + config.api_key, {
+					tvdb_id: 'tvdb', 
+					title: 'title', 
+					year: 2000,
+					username: config.user,
+					password: config.pass
+				})
+				.reply(200, {status: 'success'})
+
+			trakt.request('show', 'library', {dummy: 'dummy', title: 'title', year: 2000}, function(err, res) {
+				should.exist(err)	
+				err.message.should.equal('Missing parameters')
+			})
+
+			trakt.request('show', 'library', {tvdb_id: 'tvdb', dummy: 'dummy', title: 'title', year: 2000}, function(err, res) {
+				should.not.exist(err)
+				should.exist(res)
+				res.should.have.property('status')
+				res.status.should.equal('success')				
 			})
 		})
 	})

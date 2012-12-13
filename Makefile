@@ -9,8 +9,11 @@ test-w:
 		--watch
 
 test-cov: 
-	@rm -r lib-cov 
+	@rm -rf lib-cov 
 	@jscoverage lib lib-cov
 	@TEST_COV=1 $(MAKE) test REPORTER=html-cov > coverage.html
 
-.PHONY: test test-w
+clean:
+	@rm -rf lib-cov coverage.html
+
+.PHONY: test test-w clean
