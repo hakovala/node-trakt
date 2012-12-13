@@ -44,18 +44,22 @@ NodeJS client module to use Trakt.tv API.
 	trakt -a account -m test -u username -p password
 
 ### TODO List
+ - **Base**
+  - Add events to some situations
+  - Split and refactor request function
+  - Make helper functions for api calls
  - **Api Actions**
   - Add missing parameters
-	- Add missing dev parameters
-	- Handle show title as it can be many things
-	- Check parameter if it needs authentication (needed only for GET)
-	- Allow objects and lists as parameters
-	- Check parameter value validity
-	- Check for supplementary parameters (how?)
-	- Check for optional parameters that are marked as mandatory in the api
+  - Add missing dev parameters
+  - Handle show title as it can be many things
+  - Check parameter if it needs authentication (needed only for GET)
+  - Allow objects and lists as parameters
+  - Check parameter value validity
+  - Check for supplementary parameters (how?)
+  - Check for optional parameters that are marked as mandatory in the api
  - **Cli**
- 	- Redesign cli arguments
- 	- Add usefull usage and help printout
+  - Redesign cli arguments
+  - Add usefull usage and help printout
 
 
 
