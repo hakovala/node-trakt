@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var Trakt = require('../lib/index.js');
+var Trakt = require('../index.js');
 var argv = require('optimist')
 	.usage('Usage: $0 -a <action> -m <method> [options]')
 	.alias('u', 'user')
