@@ -5,14 +5,15 @@
   "description": "Helper module for interacting with Trakt API",
   "main": "./lib/index.js",
   "scripts": {
-    "start": "echo Not yet implemented",
-    "test": "nodeunit ./tests"
+    "test": "tap tests/*.js",
+    "coverage": "TAP_COV=1 tap ./tests"
   },
   "dependencies": {
-    "optimist": ">= 0.3.x"
+    "optimist": "~ 0.3.x"
   },
   "devDependencies": {
-    "nodeunit" : ">= 0.7.x"
+    "tap": "~ 0.3.x",
+    "cover": "~0.2.x"
   },
   "engines": {
     "node": ">= 0.8"
