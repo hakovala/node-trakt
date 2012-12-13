@@ -1,26 +1,28 @@
 {
   "name": "trakt",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Harri Kovalainen <hakovala@gmail.com>",
-  "description": "Helper module for interacting with Trakt API",
+  "description": "Wrapper for Trakt.tv API",
+  "keywords": ["trakt", "trakt.tv", "api", "json"], 
   "main": "./lib/index.js",
   "scripts": {
-    "test": "tap tests/*.js",
-    "coverage": "TAP_COV=1 tap ./tests"
+    "test": "./node_modules/.bin/istanbul cover test.js"
   },
   "dependencies": {
     "optimist": "~ 0.3.x"
   },
   "devDependencies": {
-    "tap": "~ 0.3.x",
-    "cover": "~0.2.x"
+    "nodeunit": "~0.7.4",
+    "istanbul": "~0.1.25"
   },
   "engines": {
-    "node": ">= 0.8"
+    "node": ">= 0.6"
   },
   "repository": {
     "type": "git",
-    "url": "ssh://qekosoft.com/srv/git/node-trakt.git"
+    "url": "git://github.com/hakovala/node-trakt.git"
   },
-  "bin" : { "trakt" : "./bin/cli.js" }
+  "bin": {
+    "trakt": "./bin/cli.js"
+  }
 }

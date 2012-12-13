@@ -1,7 +1,6 @@
-var test = require('tap').test 
-var Trakt = require('..')
+var Trakt = require('../lib/index.js')
 
-test("creating Trakt object", function(t) {
+exports['trakt initialization'] = function(t) {
 	var trakt = new Trakt()
 	t.ok(trakt instanceof Trakt, 'Trakt without options')
 	trakt = new Trakt({api_key: 'dummy'})
@@ -10,9 +9,5 @@ test("creating Trakt object", function(t) {
 	t.ok(trakt instanceof Trakt, 'Trakt with username, password and api_key')
 	trakt = new Trakt({username: 'test', password: 'test', pass_hash: true})
 	t.ok(trakt instanceof Trakt, 'password is already hash')
-	t.end()
-});
-
-test("request testing", function(t) {
-	t.end()	
-});
+	t.done()	
+}

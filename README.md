@@ -1,9 +1,9 @@
 node-trakt
 =====
 
-NodeJS client module to use Trakt.tv API.
+NodeJS wrapper module for Trakt.tv API.
 
-> This is in VERY early design/development version. Module interface and functionality WILL change.
+> This is a early development version. So, expect it to change..
 
 ### Install
  Clone github repository to *node_modules* folder.
