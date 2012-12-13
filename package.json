@@ -14,7 +14,8 @@
     "test": "make test"
   },
   "dependencies": {
-    "optimist": "~ 0.3.0"
+    "optimist": "~ 0.3.0",
+    "node-fakeweb": "0.0.7"
   },
   "devDependencies": {
     "should": "~1.2.1",

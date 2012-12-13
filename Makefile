@@ -3,10 +3,14 @@ REPORTER = dot
 test: 
 	@NODE_ENV=test ./node_modules/.bin/mocha --reporter $(REPORTER)
 
-test-cov: lib-cov
+test-w: 
+	@NODE_ENV=test ./node_modules/.bin/mocha \
+		--reporter $(REPORTER) \
+		--watch
+
+test-cov: 
+	@rm -r lib-cov 
+	@jscoverage lib lib-cov
 	@TEST_COV=1 $(MAKE) test REPORTER=html-cov > coverage.html
 
-lib-cov:
-	@jscoverage lib lib-cov
-
-.PHONY: test
+.PHONY: test test-w
