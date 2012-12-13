@@ -14,9 +14,10 @@
     "test": "make test"
   },
   "dependencies": {
-    "optimist": "~ 0.3.x"
+    "optimist": "~ 0.3.0"
   },
   "devDependencies": {
+    "should": "~1.2.1",
     "mocha": "~1.7.4"
   },
   "engines": {
