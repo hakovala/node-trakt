@@ -5,11 +5,11 @@ NodeJS wrapper module for Trakt.tv API.
 
 > This is a early development version. So, expect it to change..
 
-### Install
+## Install
  Clone github repository to *node_modules* folder.
  Add your Trakt API Key to *config.js*.
 
-### Usage example
+## Usage example
 	var Trakt = require('trakt');
 	var trakt = new Trakt({username: 'username', password: 'password'}); 
 
@@ -39,14 +39,14 @@ NodeJS wrapper module for Trakt.tv API.
 		}
 	})
 
-### CLI Usage
+## CLI Usage
 	trakt -a search -m shows --query 'american dad'
 	trakt -a account -m test -u username -p password
 
-### TODO List
+## TODO List
  - **Base**
   - Add events to some situations
-  - Split and refactor request function
+  - Refactor request functions
   - Make helper functions for api calls
  - **Api Actions**
   - Add missing parameters
@@ -60,6 +60,22 @@ NodeJS wrapper module for Trakt.tv API.
  - **Cli**
   - Redesign cli arguments
   - Add usefull usage and help printout
+ - **Tests**
+ 	- Implement them
 
+## Copyright and license
 
+Copyright 2012 hakovala
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+> [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 

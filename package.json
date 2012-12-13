@@ -1,7 +1,10 @@
 {
   "name": "trakt",
   "version": "0.0.1",
-  "author": "Harri Kovalainen <hakovala@gmail.com>",
+  "author": {
+    "name": "Harri Kovalainen",
+    "email": "hakovala@gmail.com"
+  },
   "description": "Wrapper for Trakt.tv API",
   "keywords": [
     "trakt",
@@ -17,18 +20,26 @@
     "optimist": "~ 0.3.0"
   },
   "devDependencies": {
-    "nock": "~0.14.2",
-    "should": "~1.2.1",
-    "mocha": "~1.7.4"
+    "nock": "~0.14.0",
+    "should": "~1.2.0",
+    "mocha": "~1.7.0"
   },
   "engines": {
     "node": ">= 0.6"
   },
+  "directories": {
+    "lib": "./lib",
+    "bin": "./bin"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakovala/node-trakt.git"
+    "url": "http://github.com/hakovala/node-trakt.git"
   },
   "bin": {
     "trakt": "./bin/cli.js"
-  }
+  },
+  "licenses" : [{
+    "type": "Apache-2.0",
+    "url": "http://www.apache.org/licenses/LICENSE-2.0"
+  }]
 }
