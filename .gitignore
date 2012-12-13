@@ -17,4 +17,4 @@ npm-debug.log
 
 .coverage_data
 cover_html
-coverage
+coverage*

@@ -3,17 +3,21 @@
   "version": "0.0.1",
   "author": "Harri Kovalainen <hakovala@gmail.com>",
   "description": "Wrapper for Trakt.tv API",
-  "keywords": ["trakt", "trakt.tv", "api", "json"], 
-  "main": "./lib/index.js",
+  "keywords": [
+    "trakt",
+    "trakt.tv",
+    "api",
+    "json"
+  ],
+  "main": "./index.js",
   "scripts": {
-    "test": "./node_modules/.bin/istanbul cover test.js"
+    "test": "make test"
   },
   "dependencies": {
     "optimist": "~ 0.3.x"
   },
   "devDependencies": {
-    "nodeunit": "~0.7.4",
-    "istanbul": "~0.1.25"
+    "mocha": "~1.7.4"
   },
   "engines": {
     "node": ">= 0.6"
