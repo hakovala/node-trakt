@@ -17,6 +17,7 @@
     "optimist": "~ 0.3.0"
   },
   "devDependencies": {
+    "nock": "~0.14.2",
     "should": "~1.2.1",
     "mocha": "~1.7.4"
   },
