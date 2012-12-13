@@ -27,9 +27,23 @@ describe('Trakt init', function(){
 
 describe('Trakt requests', function() {
 	var trakt = new Trakt({api_key: config.api_key})
+	trakt.on('error', function(err) {})
 	describe('Get request', function() {
+		it('should give error, invalid api_key', function() {
+			var get = nock(url)
+				.get('/search/shows.json/' + config.api_key + '/hello')
+				.reply(401, {status: 'failure', error: 'invalid API key'})
+			trakt.request('search', 'shows', {query: 'hello'}, function(err, res) {
+				should.exist(err, 'expecting error')
+				should.exist(res)
+				res.should.have.property('status')
+				res.should.have.property('error')
+				res.status.should.equal('failure')
+				res.error.should.equal('invalid API key')
+			})
+		})
 		it('should give error, missing param', function() {
-			var get_req = nock(url)
+			var get = nock(url)
 				.get('/search/shows.json/' + config.api_key + '/')
 			trakt.request('search', 'shows', {}, function(err, res) {
 				should.exist(err, 'expecting error')
@@ -40,10 +54,11 @@ describe('Trakt requests', function() {
 		it('should be ok', function() {
 			var get_req = nock(url)
 				.get('/search/shows.json/' + config.api_key + '/hello')
-				.reply(200, '{ "status": "success" }')
+				.reply(200, [{title: "hello"  }])
 			trakt.request('search', 'shows', {query: 'hello'}, function(err, res) {
 				should.not.exist(err)
 				should.exist(res)
+				res.should.includeEql({title: "hello"})
 			})
 		})
 	})
@@ -58,7 +73,6 @@ describe('Trakt requests', function() {
 			var post = nock(url)
 				.post('/account/test/' + config.api_key, {username: 'wrong', password: 'wrong'})
 				.reply(401, {status: 'failure', error: 'failed authentication'})
-			trakt.on('error', function(err) {})
 			trakt.setUser('wrong', 'wrong', true)
 			trakt.request('account', 'test', {}, function(err, res) {
 				should.exist(err)
