@@ -3,7 +3,7 @@ node-trakt [![Build Status](https://travis-ci.org/hakovala/node-trakt.png?branch
 
 NodeJS wrapper module for Trakt.tv API.
 
-> This is a early development version. So, expect it to change..
+> This is a early development version. So, expect it to change and have many bugs..
 
 ## Install
  Clone github repository to *node_modules* folder.
@@ -40,8 +40,8 @@ NodeJS wrapper module for Trakt.tv API.
 	})
 
 ## CLI Usage
-	trakt -a search -m shows --query 'american dad'
-	trakt -a account -m test -u username -p password
+	trakt search shows --query 'american dad'
+	trakt account test -u username -p password
 
 ## TODO List
  - **Base**

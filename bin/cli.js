@@ -98,7 +98,7 @@ function showHelp() {
 	console.log("  <value>\tValue for the argument")
 	console.log()
 	console.log("Examples:")
-	console.log(" $ trakt search shows continuum 'american dad'")
+	console.log(" $ trakt search shows --query 'american dad'")
 	console.log("\t- Searches Trakt for shows named 'continuum' and 'american dad'")
 	console.log(" $ trakt -u username -p password account settings")
 	console.log("\t- Fetches users settings")
