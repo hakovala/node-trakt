@@ -68,7 +68,7 @@ if (api[argv._[0]]) {
 	process.exit(1)
 }
 
-var trakt = new Trakt({username: argv.user, password: argv.pass}); 
+var trakt = new Trakt({username: argv.user, password: argv.pass, pass_hash: argv.passhash}); 
 
 trakt.on('error', function(err) {
 	console.log("Trakt error: " + err.message)
