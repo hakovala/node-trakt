@@ -6,8 +6,7 @@ NodeJS wrapper module for Trakt.tv API.
 > This is a early development version. So, expect it to change and have many bugs..
 
 ## Install
- Clone github repository to *node_modules* folder.
- Add your Trakt API Key to *config.js*.
+	npm install trakt
 
 ## Usage example
 	var Trakt = require('trakt');
@@ -52,14 +51,14 @@ NodeJS wrapper module for Trakt.tv API.
   - Add missing parameters
   - Add missing dev parameters
   - Handle show title as it can be many things
-  - Check parameter if it needs authentication (needed only for GET)
+  - ~~Check parameter if it needs authentication (needed only for GET)~~
   - Allow objects and lists as parameters
   - Check parameter value validity
   - Check for supplementary parameters (how?)
   - Check for optional parameters that are marked as mandatory in the api
  - **Cli**
-  - Redesign cli arguments
-  - Add usefull usage and help printout
+  - ~~Redesign cli arguments~~
+  - ~~Add usefull usage and help printout~~
  - **Tests**
  	- Implement them
 
