@@ -1,66 +1,8 @@
-node-trakt [![Build Status](https://travis-ci.org/hakovala/node-trakt.png?branch=master)](https://travis-ci.org/hakovala/node-trakt)
-=====
+# node-trakt 
 
-NodeJS wrapper module for Trakt.tv API.
+## NOTE: This module is now deprecated
 
-> This is a early development version. So, expect it to change and have many bugs..
-
-## Install
-	npm install trakt
-
-## Usage example
-	var Trakt = require('trakt');
-	var trakt = new Trakt({username: 'username', password: 'password'}); 
-
-	var options = { query: 'american dad' }
-
-	// Search 'american dad' from Trakt
-	trakt.request('search', 'shows', options, function(err, result) {
-		if (err) {
-			console.log(err);
-			if (result) {
-				console.log(result);
-			}
-		} else {
-			console.log(result);
-		}
-	})
-
-	// Test account authentication
-	trakt.request('account', 'test', {}, function(err, result) {
-		if (err) {
-			console.log(err);
-			if (result) {
-				console.log(result);
-			}
-		} else {
-			console.log(result);
-		}
-	})
-
-## CLI Usage
-	trakt search shows --query 'american dad'
-	trakt account test -u username -p password
-
-## TODO List
- - **Base**
-  - Add events to some situations
-  - Refactor request functions
-  - Make helper functions for api calls
- - **Api Actions**
-  - Add missing parameters
-  - Add missing dev parameters
-  - Handle show title as it can be many things
-  - ~~Check parameter if it needs authentication (needed only for GET)~~
-  - Allow objects and lists as parameters
-  - Check parameter value validity
-  - Check for supplementary parameters (how?)
-  - Check for optional parameters that are marked as mandatory in the api
- - **Cli**
-  - ~~Redesign cli arguments~~
-  - ~~Add usefull usage and help printout~~
- - **Tests**
- 	- Implement them
+Track.tv API has changed and because of that this module is now deprecated and most likely won't work anymore.
 
 ## Copyright and license
 
