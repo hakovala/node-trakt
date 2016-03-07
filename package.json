@@ -17,5 +17,9 @@
     "type": "git",
     "url": "http://github.com/hakovala/node-trakt.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "got": "^6.2.0"
+  }
 }
