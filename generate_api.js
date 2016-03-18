@@ -114,6 +114,7 @@ function parseUris(res) {
 		api[name] = tools.extend(method, {
 			verb: action.method,
 			auth: isAuthRequired(action),
+			pagination: hasPagination(action),
 		});
 	});
 }
@@ -131,6 +132,13 @@ function isAuthRequired(action) {
 		return 'optional';
 	}
 	return false;
+}
+
+/**
+ * Check if action supports pagination
+ */
+function hasPagination(action) {
+	return /Pagination/i.test(action.description);
 }
 
 /**
