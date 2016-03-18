@@ -121,11 +121,22 @@ function parseUris(res) {
 			return;
 
 		var name = getMethodName(base.join('/'), verb);
-		api[name] = tools.extend(method, {
-			verb: action.method,
-			auth: isAuthRequired(action),
-			pagination: hasPagination(action),
-		});
+		if (api[name]) {
+			// api already exists, extend it
+			l(' ! alread exists: %s', name);
+			var m = api[name];
+
+			m.params = m.query.concat(method.params)
+			m.query = m.query.concat(method.query)
+			m.required.params = m.required.query.concat(method.required.params)
+			m.required.query = m.required.query.concat(method.required.query)
+		} else {
+			api[name] = tools.extend(method, {
+				verb: action.method,
+				auth: isAuthRequired(action),
+				pagination: hasPagination(action),
+			});
+		}
 	});
 }
 
