@@ -10,10 +10,20 @@ const tools = require('./lib/tools');
 const API_URL = 'https://jsapi.apiary.io/apis/trakt.json';
 
 const API_GROUPS = [
-//	'Calendars',
-	'Search',
+	'Calendars',
+	'Checkin',
 	'Comments',
-//	'Users',
+	'Genres',
+	'Movies',
+	'People',
+	'Recommendations',
+	'Scrobble',
+	'Search',
+	'Shows',
+	'Seasons',
+	'Episodes',
+	'Sync',
+	'Users',
 ];
 
 var api = {};
