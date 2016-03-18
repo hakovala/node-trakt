@@ -112,6 +112,7 @@ function parseUris(res) {
 
 		var name = getMethodName(base.join('/'), verb);
 		api[name] = tools.extend(method, {
+			verb: action.method,
 			auth: isAuthRequired(action),
 		});
 	});
