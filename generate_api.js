@@ -96,7 +96,7 @@ function parseUris(res) {
 
 	var base = parts.base;
 	var method = {
-		uri: parts.uri.join('/'),
+		uri: parts.uri,
 		params: parts.params,
 		query: parts.query,
 		required: {
