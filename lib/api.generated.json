@@ -1,0 +1,2244 @@
+{
+  "calendars/my/shows": {
+    "uri": [
+      "calendars",
+      "my",
+      "shows",
+      "{start_date}",
+      "{days}"
+    ],
+    "params": [
+      "start_date",
+      "days"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": false
+  },
+  "calendars/my/shows/new": {
+    "uri": [
+      "calendars",
+      "my",
+      "shows",
+      "new",
+      "{start_date}",
+      "{days}"
+    ],
+    "params": [
+      "start_date",
+      "days"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": false
+  },
+  "calendars/my/shows/premieres": {
+    "uri": [
+      "calendars",
+      "my",
+      "shows",
+      "premieres",
+      "{start_date}",
+      "{days}"
+    ],
+    "params": [
+      "start_date",
+      "days"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": false
+  },
+  "calendars/my/movies": {
+    "uri": [
+      "calendars",
+      "my",
+      "movies",
+      "{start_date}",
+      "{days}"
+    ],
+    "params": [
+      "start_date",
+      "days"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": false
+  },
+  "calendars/all/shows": {
+    "uri": [
+      "calendars",
+      "all",
+      "shows",
+      "{start_date}",
+      "{days}"
+    ],
+    "params": [
+      "start_date",
+      "days"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "calendars/all/shows/new": {
+    "uri": [
+      "calendars",
+      "all",
+      "shows",
+      "new",
+      "{start_date}",
+      "{days}"
+    ],
+    "params": [
+      "start_date",
+      "days"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "calendars/all/shows/premieres": {
+    "uri": [
+      "calendars",
+      "all",
+      "shows",
+      "premieres",
+      "{start_date}",
+      "{days}"
+    ],
+    "params": [
+      "start_date",
+      "days"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "calendars/all/movies": {
+    "uri": [
+      "calendars",
+      "all",
+      "movies",
+      "{start_date}",
+      "{days}"
+    ],
+    "params": [
+      "start_date",
+      "days"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "checkin/add": {
+    "uri": [
+      "checkin"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "checkin/remove": {
+    "uri": [
+      "checkin"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "comments/add": {
+    "uri": [
+      "comments"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "POST",
+    "auth": true,
+    "pagination": false
+  },
+  "comments": {
+    "uri": [
+      "comments",
+      "{id}"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "comments/update": {
+    "uri": [
+      "comments",
+      "{id}"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "comments/remove": {
+    "uri": [
+      "comments",
+      "{id}"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "comments/replies": {
+    "uri": [
+      "comments",
+      "{id}",
+      "replies"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "POST",
+    "auth": true,
+    "pagination": false
+  },
+  "comments/replies/add": {
+    "uri": [
+      "comments",
+      "{id}",
+      "replies"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "POST",
+    "auth": true,
+    "pagination": false
+  },
+  "comments/like/add": {
+    "uri": [
+      "comments",
+      "{id}",
+      "like"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "comments/like/remove": {
+    "uri": [
+      "comments",
+      "{id}",
+      "like"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "genres": {
+    "uri": [
+      "genres",
+      "{type}"
+    ],
+    "params": [
+      "type"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "movies/trending": {
+    "uri": [
+      "movies",
+      "trending"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "movies/popular": {
+    "uri": [
+      "movies",
+      "popular"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "movies/played": {
+    "uri": [
+      "movies",
+      "played",
+      "{period}"
+    ],
+    "params": [
+      "period"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "movies/watched": {
+    "uri": [
+      "movies",
+      "watched",
+      "{period}"
+    ],
+    "params": [
+      "period"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "movies/collected": {
+    "uri": [
+      "movies",
+      "collected",
+      "{period}"
+    ],
+    "params": [
+      "period"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "movies/anticipated": {
+    "uri": [
+      "movies",
+      "anticipated"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "movies/boxoffice": {
+    "uri": [
+      "movies",
+      "boxoffice"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "movies/updates": {
+    "uri": [
+      "movies",
+      "updates",
+      "{start_date}"
+    ],
+    "params": [
+      "start_date"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "movies": {
+    "uri": [
+      "movies",
+      "{id}"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "movies/aliases": {
+    "uri": [
+      "movies",
+      "{id}",
+      "aliases"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "movies/releases": {
+    "uri": [
+      "movies",
+      "{id}",
+      "releases",
+      "{country}"
+    ],
+    "params": [
+      "id",
+      "country"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "movies/translations": {
+    "uri": [
+      "movies",
+      "{id}",
+      "translations",
+      "{language}"
+    ],
+    "params": [
+      "id",
+      "language"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "movies/comments": {
+    "uri": [
+      "movies",
+      "{id}",
+      "comments"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "movies/people": {
+    "uri": [
+      "movies",
+      "{id}",
+      "people"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "movies/ratings": {
+    "uri": [
+      "movies",
+      "{id}",
+      "ratings"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "movies/related": {
+    "uri": [
+      "movies",
+      "{id}",
+      "related"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "movies/stats": {
+    "uri": [
+      "movies",
+      "{id}",
+      "stats"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "movies/watching": {
+    "uri": [
+      "movies",
+      "{id}",
+      "watching"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "people": {
+    "uri": [
+      "people",
+      "{id}"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "people/movies": {
+    "uri": [
+      "people",
+      "{id}",
+      "movies"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "people/shows": {
+    "uri": [
+      "people",
+      "{id}",
+      "shows"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "recommendations/movies": {
+    "uri": [
+      "recommendations",
+      "movies"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": false
+  },
+  "recommendations/movies/remove": {
+    "uri": [
+      "recommendations",
+      "movies",
+      "{id}"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "recommendations/shows": {
+    "uri": [
+      "recommendations",
+      "shows"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": false
+  },
+  "recommendations/shows/remove": {
+    "uri": [
+      "recommendations",
+      "shows",
+      "{id}"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "scrobble/start/add": {
+    "uri": [
+      "scrobble",
+      "start"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "POST",
+    "auth": true,
+    "pagination": false
+  },
+  "scrobble/pause/add": {
+    "uri": [
+      "scrobble",
+      "pause"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "POST",
+    "auth": true,
+    "pagination": false
+  },
+  "scrobble/stop/add": {
+    "uri": [
+      "scrobble",
+      "stop"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "POST",
+    "auth": true,
+    "pagination": false
+  },
+  "search": {
+    "uri": [
+      "search"
+    ],
+    "params": [],
+    "query": [
+      "id_type",
+      "id"
+    ],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "shows/trending": {
+    "uri": [
+      "shows",
+      "trending"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "shows/popular": {
+    "uri": [
+      "shows",
+      "popular"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "shows/played": {
+    "uri": [
+      "shows",
+      "played",
+      "{period}"
+    ],
+    "params": [
+      "period"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "shows/watched": {
+    "uri": [
+      "shows",
+      "watched",
+      "{period}"
+    ],
+    "params": [
+      "period"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "shows/collected": {
+    "uri": [
+      "shows",
+      "collected",
+      "{period}"
+    ],
+    "params": [
+      "period"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "shows/anticipated": {
+    "uri": [
+      "shows",
+      "anticipated"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "shows/updates": {
+    "uri": [
+      "shows",
+      "updates",
+      "{start_date}"
+    ],
+    "params": [
+      "start_date"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "shows": {
+    "uri": [
+      "shows",
+      "{id}"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "shows/aliases": {
+    "uri": [
+      "shows",
+      "{id}",
+      "aliases"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "shows/translations": {
+    "uri": [
+      "shows",
+      "{id}",
+      "translations",
+      "{language}"
+    ],
+    "params": [
+      "id",
+      "language"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "shows/comments": {
+    "uri": [
+      "shows",
+      "{id}",
+      "comments"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "shows/progress/collection": {
+    "uri": [
+      "shows",
+      "{id}",
+      "progress",
+      "collection"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [
+      "hidden",
+      "specials"
+    ],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": false
+  },
+  "shows/progress/watched": {
+    "uri": [
+      "shows",
+      "{id}",
+      "progress",
+      "watched"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [
+      "hidden",
+      "specials"
+    ],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": false
+  },
+  "shows/people": {
+    "uri": [
+      "shows",
+      "{id}",
+      "people"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "shows/ratings": {
+    "uri": [
+      "shows",
+      "{id}",
+      "ratings"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "shows/related": {
+    "uri": [
+      "shows",
+      "{id}",
+      "related"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "shows/stats": {
+    "uri": [
+      "shows",
+      "{id}",
+      "stats"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "shows/watching": {
+    "uri": [
+      "shows",
+      "{id}",
+      "watching"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "shows/seasons": {
+    "uri": [
+      "shows",
+      "{id}",
+      "seasons",
+      "{season}"
+    ],
+    "params": [
+      "id",
+      "season"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "shows/seasons/comments": {
+    "uri": [
+      "shows",
+      "{id}",
+      "seasons",
+      "{season}",
+      "comments"
+    ],
+    "params": [
+      "id",
+      "season"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "shows/seasons/ratings": {
+    "uri": [
+      "shows",
+      "{id}",
+      "seasons",
+      "{season}",
+      "ratings"
+    ],
+    "params": [
+      "id",
+      "season"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "shows/seasons/stats": {
+    "uri": [
+      "shows",
+      "{id}",
+      "seasons",
+      "{season}",
+      "stats"
+    ],
+    "params": [
+      "id",
+      "season"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "shows/seasons/watching": {
+    "uri": [
+      "shows",
+      "{id}",
+      "seasons",
+      "{season}",
+      "watching"
+    ],
+    "params": [
+      "id",
+      "season"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "shows/seasons/episodes": {
+    "uri": [
+      "shows",
+      "{id}",
+      "seasons",
+      "{season}",
+      "episodes",
+      "{episode}"
+    ],
+    "params": [
+      "id",
+      "season",
+      "episode"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "shows/seasons/episodes/comments": {
+    "uri": [
+      "shows",
+      "{id}",
+      "seasons",
+      "{season}",
+      "episodes",
+      "{episode}",
+      "comments"
+    ],
+    "params": [
+      "id",
+      "season",
+      "episode"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "shows/seasons/episodes/ratings": {
+    "uri": [
+      "shows",
+      "{id}",
+      "seasons",
+      "{season}",
+      "episodes",
+      "{episode}",
+      "ratings"
+    ],
+    "params": [
+      "id",
+      "season",
+      "episode"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "shows/seasons/episodes/stats": {
+    "uri": [
+      "shows",
+      "{id}",
+      "seasons",
+      "{season}",
+      "episodes",
+      "{episode}",
+      "stats"
+    ],
+    "params": [
+      "id",
+      "season",
+      "episode"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "shows/seasons/episodes/watching": {
+    "uri": [
+      "shows",
+      "{id}",
+      "seasons",
+      "{season}",
+      "episodes",
+      "{episode}",
+      "watching"
+    ],
+    "params": [
+      "id",
+      "season",
+      "episode"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": false
+  },
+  "sync/last_activities": {
+    "uri": [
+      "sync",
+      "last_activities"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": false
+  },
+  "sync/playback": {
+    "uri": [
+      "sync",
+      "playback",
+      "{type}"
+    ],
+    "params": [
+      "type"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": false
+  },
+  "sync/playback/remove": {
+    "uri": [
+      "sync",
+      "playback",
+      "{id}"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "sync/collection": {
+    "uri": [
+      "sync",
+      "collection",
+      "{type}"
+    ],
+    "params": [
+      "type"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": false
+  },
+  "sync/collection/add": {
+    "uri": [
+      "sync",
+      "collection"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "POST",
+    "auth": true,
+    "pagination": false
+  },
+  "sync/collection/remove/add": {
+    "uri": [
+      "sync",
+      "collection",
+      "remove"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "POST",
+    "auth": true,
+    "pagination": false
+  },
+  "sync/watched": {
+    "uri": [
+      "sync",
+      "watched",
+      "{type}"
+    ],
+    "params": [
+      "type"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": false
+  },
+  "sync/history": {
+    "uri": [
+      "sync",
+      "history",
+      "{type}",
+      "{id}"
+    ],
+    "params": [
+      "type",
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": true
+  },
+  "sync/history/add": {
+    "uri": [
+      "sync",
+      "history"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "POST",
+    "auth": true,
+    "pagination": false
+  },
+  "sync/history/remove/add": {
+    "uri": [
+      "sync",
+      "history",
+      "remove"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "POST",
+    "auth": true,
+    "pagination": false
+  },
+  "sync/ratings": {
+    "uri": [
+      "sync",
+      "ratings",
+      "{type}",
+      "{rating}"
+    ],
+    "params": [
+      "type",
+      "rating"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": false
+  },
+  "sync/ratings/add": {
+    "uri": [
+      "sync",
+      "ratings"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "POST",
+    "auth": true,
+    "pagination": false
+  },
+  "sync/ratings/remove/add": {
+    "uri": [
+      "sync",
+      "ratings",
+      "remove"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "POST",
+    "auth": true,
+    "pagination": false
+  },
+  "sync/watchlist": {
+    "uri": [
+      "sync",
+      "watchlist",
+      "{type}"
+    ],
+    "params": [
+      "type"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": false
+  },
+  "sync/watchlist/add": {
+    "uri": [
+      "sync",
+      "watchlist"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "POST",
+    "auth": true,
+    "pagination": false
+  },
+  "sync/watchlist/remove/add": {
+    "uri": [
+      "sync",
+      "watchlist",
+      "remove"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "POST",
+    "auth": true,
+    "pagination": false
+  },
+  "users/settings": {
+    "uri": [
+      "users",
+      "settings"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": false
+  },
+  "users/requests": {
+    "uri": [
+      "users",
+      "requests"
+    ],
+    "params": [],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": false
+  },
+  "users/requests/add": {
+    "uri": [
+      "users",
+      "requests",
+      "{id}"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "users/requests/remove": {
+    "uri": [
+      "users",
+      "requests",
+      "{id}"
+    ],
+    "params": [
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "users/hidden": {
+    "uri": [
+      "users",
+      "hidden",
+      "{section}{?type}"
+    ],
+    "params": [
+      "section}{?type"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": true
+  },
+  "users/likes": {
+    "uri": [
+      "users",
+      "likes",
+      "{type}"
+    ],
+    "params": [
+      "type"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": true,
+    "pagination": true
+  },
+  "users": {
+    "uri": [
+      "users",
+      "{username}"
+    ],
+    "params": [
+      "username"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": "optional",
+    "pagination": false
+  },
+  "users/collection": {
+    "uri": [
+      "users",
+      "{username}",
+      "collection",
+      "{type}"
+    ],
+    "params": [
+      "username",
+      "type"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": "optional",
+    "pagination": false
+  },
+  "users/comments": {
+    "uri": [
+      "users",
+      "{username}",
+      "comments",
+      "{comment_type}",
+      "{type}"
+    ],
+    "params": [
+      "username",
+      "comment_type",
+      "type"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": "optional",
+    "pagination": true
+  },
+  "users/lists": {
+    "uri": [
+      "users",
+      "{username}",
+      "lists",
+      "{id}"
+    ],
+    "params": [
+      "username",
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "users/lists/add": {
+    "uri": [
+      "users",
+      "{username}",
+      "lists"
+    ],
+    "params": [
+      "username"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "POST",
+    "auth": true,
+    "pagination": false
+  },
+  "users/lists/update": {
+    "uri": [
+      "users",
+      "{username}",
+      "lists",
+      "{id}"
+    ],
+    "params": [
+      "username",
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "users/lists/remove": {
+    "uri": [
+      "users",
+      "{username}",
+      "lists",
+      "{id}"
+    ],
+    "params": [
+      "username",
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "users/lists/like/add": {
+    "uri": [
+      "users",
+      "{username}",
+      "lists",
+      "{id}",
+      "like"
+    ],
+    "params": [
+      "username",
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "users/lists/like/remove": {
+    "uri": [
+      "users",
+      "{username}",
+      "lists",
+      "{id}",
+      "like"
+    ],
+    "params": [
+      "username",
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "users/lists/items": {
+    "uri": [
+      "users",
+      "{username}",
+      "lists",
+      "{id}",
+      "items"
+    ],
+    "params": [
+      "username",
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "POST",
+    "auth": true,
+    "pagination": false
+  },
+  "users/lists/items/add": {
+    "uri": [
+      "users",
+      "{username}",
+      "lists",
+      "{id}",
+      "items"
+    ],
+    "params": [
+      "username",
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "POST",
+    "auth": true,
+    "pagination": false
+  },
+  "users/lists/items/remove/add": {
+    "uri": [
+      "users",
+      "{username}",
+      "lists",
+      "{id}",
+      "items",
+      "remove"
+    ],
+    "params": [
+      "username",
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "POST",
+    "auth": true,
+    "pagination": false
+  },
+  "users/lists/comments": {
+    "uri": [
+      "users",
+      "{username}",
+      "lists",
+      "{id}",
+      "comments"
+    ],
+    "params": [
+      "username",
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": false,
+    "pagination": true
+  },
+  "users/follow/add": {
+    "uri": [
+      "users",
+      "{username}",
+      "follow"
+    ],
+    "params": [
+      "username"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "users/follow/remove": {
+    "uri": [
+      "users",
+      "{username}",
+      "follow"
+    ],
+    "params": [
+      "username"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "DELETE",
+    "auth": true,
+    "pagination": false
+  },
+  "users/followers": {
+    "uri": [
+      "users",
+      "{username}",
+      "followers"
+    ],
+    "params": [
+      "username"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": "optional",
+    "pagination": false
+  },
+  "users/following": {
+    "uri": [
+      "users",
+      "{username}",
+      "following"
+    ],
+    "params": [
+      "username"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": "optional",
+    "pagination": false
+  },
+  "users/friends": {
+    "uri": [
+      "users",
+      "{username}",
+      "friends"
+    ],
+    "params": [
+      "username"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": "optional",
+    "pagination": false
+  },
+  "users/history": {
+    "uri": [
+      "users",
+      "{username}",
+      "history",
+      "{type}",
+      "{id}"
+    ],
+    "params": [
+      "username",
+      "type",
+      "id"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": "optional",
+    "pagination": true
+  },
+  "users/ratings": {
+    "uri": [
+      "users",
+      "{username}",
+      "ratings",
+      "{type}",
+      "{rating}"
+    ],
+    "params": [
+      "username",
+      "type",
+      "rating"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": "optional",
+    "pagination": false
+  },
+  "users/watchlist": {
+    "uri": [
+      "users",
+      "{username}",
+      "watchlist",
+      "{type}"
+    ],
+    "params": [
+      "username",
+      "type"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": "optional",
+    "pagination": false
+  },
+  "users/watching": {
+    "uri": [
+      "users",
+      "{username}",
+      "watching"
+    ],
+    "params": [
+      "username"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": "optional",
+    "pagination": false
+  },
+  "users/watched": {
+    "uri": [
+      "users",
+      "{username}",
+      "watched",
+      "{type}"
+    ],
+    "params": [
+      "username",
+      "type"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": "optional",
+    "pagination": false
+  },
+  "users/stats": {
+    "uri": [
+      "users",
+      "{username}",
+      "stats"
+    ],
+    "params": [
+      "username"
+    ],
+    "query": [],
+    "required": {
+      "params": [],
+      "query": []
+    },
+    "verb": "GET",
+    "auth": "optional",
+    "pagination": false
+  }
+}
