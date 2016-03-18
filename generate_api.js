@@ -69,7 +69,7 @@ function parseApi(json) {
 
 	l('API Groups:');
 	groups.forEach((group) => {
-		l(' == %s', group.name);
+		l('   %s', group.name);
 		group.resources.forEach(parseUris);
 	});
 
