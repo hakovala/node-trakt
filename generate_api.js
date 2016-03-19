@@ -131,6 +131,10 @@ function parseUris(res) {
 			m.required.params = m.required.query.concat(method.required.params)
 			m.required.query = m.required.query.concat(method.required.query)
 		} else {
+			if (hasExtended(action)) {
+				// add extended to supported query parameters
+				method.query.push('extended');
+			}
 			api[name] = tools.extend(method, {
 				verb: action.method,
 				auth: isAuthRequired(action),
@@ -153,6 +157,13 @@ function isAuthRequired(action) {
 		return 'optional';
 	}
 	return false;
+}
+
+/**
+ * Check if action supports extended parameter.
+ */
+function hasExtended(action) {
+	return /extended/i.test(action.description);
 }
 
 /**

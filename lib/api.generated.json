@@ -981,7 +981,9 @@
     "params": [
       "id"
     ],
-    "query": [],
+    "query": [
+      "extended"
+    ],
     "required": {
       "params": [],
       "query": []
@@ -1187,10 +1189,13 @@
       "seasons"
     ],
     "params": [
+      "extended",
       "id",
       "season"
     ],
-    "query": [],
+    "query": [
+      "extended"
+    ],
     "required": {
       "params": [],
       "query": []
@@ -1462,7 +1467,9 @@
     "params": [
       "type"
     ],
-    "query": [],
+    "query": [
+      "extended"
+    ],
     "required": {
       "params": [],
       "query": []
@@ -1511,7 +1518,9 @@
     "params": [
       "type"
     ],
-    "query": [],
+    "query": [
+      "extended"
+    ],
     "required": {
       "params": [],
       "query": []
@@ -1801,7 +1810,9 @@
       "username",
       "type"
     ],
-    "query": [],
+    "query": [
+      "extended"
+    ],
     "required": {
       "params": [],
       "query": []
@@ -2220,7 +2231,9 @@
       "username",
       "type"
     ],
-    "query": [],
+    "query": [
+      "extended"
+    ],
     "required": {
       "params": [],
       "query": []
