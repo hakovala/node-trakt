@@ -21,5 +21,8 @@
   "dependencies": {
     "got": "^6.2.0",
     "lollog": "0.0.3"
+  },
+  "devDependencies": {
+    "fs-extra": "^0.26.7"
   }
 }
