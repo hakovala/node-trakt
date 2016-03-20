@@ -126,6 +126,8 @@ function parseUris(res) {
 			l(' ! alread exists: %s', name);
 			var m = api[name];
 
+			// use longest uri
+			m.uri = (m.uri.length > method.uri.length) ? m.uri : method.uri;
 			m.params = m.query.concat(method.params)
 			m.query = m.query.concat(method.query)
 			m.required.params = m.required.query.concat(method.required.params)

@@ -1186,7 +1186,8 @@
     "uri": [
       "shows",
       "{id}",
-      "seasons"
+      "seasons",
+      "{season}"
     ],
     "params": [
       "extended",
@@ -1847,7 +1848,8 @@
     "uri": [
       "users",
       "{username}",
-      "lists"
+      "lists",
+      "{id}"
     ],
     "params": [
       "username",
@@ -1866,7 +1868,8 @@
     "uri": [
       "users",
       "{username}",
-      "lists"
+      "lists",
+      "{id}"
     ],
     "params": [
       "username",
